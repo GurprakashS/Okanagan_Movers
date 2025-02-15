@@ -3,15 +3,15 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div>
-      <h2> Contact Us </h2>
+    <div className="contact">
+      <h2>Contact Us</h2>
       <form>
         <label>Name:</label>
-        <input type="text" />
+        <input type="text" placeholder="Enter your name" />
         <label>Email:</label>
-        <input type="email" />
+        <input type="email" placeholder="Enter your email" />
         <label>Message:</label>
-        <textarea></textarea>
+        <textarea placeholder="Your message"></textarea>
         <button type="submit">Submit</button>
       </form>
     </div>
