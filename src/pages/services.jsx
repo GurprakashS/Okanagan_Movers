@@ -1,34 +1,33 @@
-// src/pages/Services.js
+import { div } from "framer-motion/client";
 import React from "react";
 
-const Services = () => {
-  const services = [
-    {
-      title: "Residential Moving",
-      description: "We handle your home move with care.",
-    },
-    {
-      title: "Commercial Moving",
-      description: "Efficient office relocation services.",
-    },
-    {
-      title: "Packing Services",
-      description: "Professional packing for all your items.",
-    },
-    {
-      title: "Storage Solutions",
-      description: "Secure storage options available.",
-    },
-  ];
+const services = [
+  {
+    id: 1,
+    name: "Movers and Packers",
+    description: "We move your stuff safely.",
+  },
+  {
+    id: 2,
+    name: "Handyman Services",
+    description: "Fix anything in your home.",
+  },
+  {
+    id: 3,
+    name: "Software Development",
+    description: "We build custom software.",
+  },
+];
 
+const Services = () => {
   return (
-    <div className="services">
-      <h2>Our Services</h2>
-      <div className="service-cards">
-        {services.map((service, index) => (
-          <div key={index} className="card">
-            <h3>{service.title}</h3>
-            <p>{service.description}</p>
+    <div>
+      <h1>Services</h1>
+      <div className="service-list">
+        {services.map((service) => (
+          <div key={services.id} className="service-list">
+            <h3>{service.name}</h3>
+            <p> {service.description}</p>
           </div>
         ))}
       </div>

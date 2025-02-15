@@ -148,3 +148,18 @@ button {
 button:hover {
   background: #ff4c4c;
 }
+
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Responsive grid */
+  gap: 20px; /* Space between items */
+}
+
+.service-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}

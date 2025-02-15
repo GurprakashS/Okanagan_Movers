@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import TestimonialsComponent from "../Components/Testimonial/testimonials";
+import TestimonialsComponent from "./testimonials";
 
 const Home = () => {
   return (
