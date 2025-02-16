@@ -16,6 +16,7 @@ import WebDesignService from "./Pages/Solutions/webDesignService.jsx";
 import WebDevelopmentService from "./Pages/Solutions/webDevelopmentService.jsx";
 import HomeMovers from "./Pages/Solutions/homeMovers.jsx";
 import GSKThreads from "./Pages/Solutions/clothing.jsx";
+import Trending from "./Pages/trending.jsx";
 
 const App = () => {
   return (
@@ -37,6 +38,7 @@ const App = () => {
 
         <Route path="/booking" element={<Booking />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/trending" element={<Trending />} />
       </Routes>
       <Footer />
     </Router>

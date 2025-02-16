@@ -15,6 +15,10 @@ const Header = () => {
 
   const navItems = [
     {
+      title: "Home",
+      path: "/",
+    },
+    {
       title: "Solutions",
       path: "/services",
       subItems: [
@@ -31,8 +35,7 @@ const Header = () => {
     },
     {
       title: "What's new",
-      path: "/",
-      subItems: [{ title: "Latest updates", path: "/" }],
+      path: "/trending",
     },
   ];
 

@@ -1,8 +1,6 @@
 // src/pages/Home.js
 import { motion } from "framer-motion";
 
-import TestimonialsComponent from "./testimonials";
-
 const Home = () => {
   return (
     <div className="home">
@@ -16,8 +14,6 @@ const Home = () => {
         <p>Reliable and Affordable Packing & Moving Services</p>
         <button className="cta-button">Get a Free Quote</button>
       </motion.div>
-
-      <TestimonialsComponent />
     </div>
   );
 };
