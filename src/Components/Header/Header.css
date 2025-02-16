@@ -24,8 +24,14 @@
 }
 
 .dropdown-item:hover {
-  display: flex;
   background-color: #f8f9fa;
+  width: 100%;
+  margin: 0;
+  justify-content: left;
+  align-items: left;
+  display: flex;
   padding: 0.4rem 1rem 0.4rem 2rem;
   cursor: pointer;
+  transform: none;
+  position: relative;
 }
