@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import "./header.css";
+import "../../Components/Header/Header.css";
 
 const Header = () => {
   const [hoveredLink, setHoveredLink] = useState(null);
