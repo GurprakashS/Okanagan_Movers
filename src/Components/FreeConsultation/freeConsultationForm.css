@@ -1,0 +1,29 @@
+/* src/components/FreeConsultation/FreeConsultationForm.css */
+.free-consultation-form {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .free-consultation-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .free-consultation-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .free-consultation-form .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .free-consultation-form .btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+  }
