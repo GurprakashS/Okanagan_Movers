@@ -1,0 +1,31 @@
+.dropdown-menu.show {
+  position: absolute;
+  top: 100%;
+  transform: translateX(-50%);
+  width: 200px;
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  z-index: 1;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  color: #212529;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 0.2s ease;
+  position: relative;
+}
+
+.dropdown-item:hover {
+  display: flex;
+  background-color: #f8f9fa;
+  padding: 0.4rem 1rem 0.4rem 2rem;
+  cursor: pointer;
+}

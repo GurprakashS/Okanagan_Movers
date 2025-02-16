@@ -94,28 +94,6 @@ footer {
   margin-bottom: 1rem;
 }
 
-.testimonials {
-  padding: 2rem;
-  text-align: center;
-  background: #f9f9f9;
-}
-
-.testimonial-cards {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.testimonial {
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 1.5rem;
-  width: 250px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
 .contact {
   padding: 2rem;
   text-align: center;
