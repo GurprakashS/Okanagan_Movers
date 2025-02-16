@@ -1,5 +1,4 @@
 // src/pages/Home.js
-import React from "react";
 import { motion } from "framer-motion";
 
 import TestimonialsComponent from "./testimonials";

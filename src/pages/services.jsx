@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Services = () => {
   // Step 1: Define initial services (hardcoded for now)
