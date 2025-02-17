@@ -15,7 +15,7 @@ import SignUp from "./Auth/sign-up.jsx";
 import WebDesignService from "./pages/Solutions/webDesignService.jsx";
 import WebDevelopmentService from "./pages/Solutions/webDevelopmentService.jsx";
 import HomeMovers from "./pages/Solutions/homeMovers.jsx";
-import GSKThreads from "./pages/Solutions/clothing.js";
+// import GSKThreads from "./pages/Solutions/clothing.js";
 import Trending from "./pages/trending.jsx";
 
 const App = () => {
@@ -34,7 +34,7 @@ const App = () => {
           element={<WebDevelopmentService />}
         />
         <Route path="/solutions/Home-Movers" element={<HomeMovers />} />
-        <Route path="/solutions/clothing" element={<GSKThreads />} />
+        {/* <Route path="/solutions/clothing" element={<GSKThreads />} /> */}
 
         <Route path="/booking" element={<Booking />} />
         <Route path="/contact" element={<Contact />} />
