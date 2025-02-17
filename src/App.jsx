@@ -6,17 +6,17 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./Components/Header/Header.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
 
-import Home from "./Pages/home.jsx";
-import Services from "./Pages/services.jsx";
-import Contact from "./Pages/contact.jsx";
-import Booking from "./Pages/booking.jsx";
+import Home from "./pages/home.jsx";
+import Services from "./pages/services.jsx";
+import Contact from "./pages/contact.jsx";
+import Booking from "./pages/booking.jsx";
 import Login from "./Auth/login.jsx";
 import SignUp from "./Auth/sign-up.jsx";
-import WebDesignService from "./Pages/Solutions/webDesignService.jsx";
-import WebDevelopmentService from "./Pages/Solutions/webDevelopmentService.jsx";
-import HomeMovers from "./Pages/Solutions/homeMovers.jsx";
-import GSKThreads from "./Pages/Solutions/clothing.jsx";
-import Trending from "./Pages/trending.jsx";
+import WebDesignService from "./pages/Solutions/webDesignService.jsx";
+import WebDevelopmentService from "./pages/Solutions/webDevelopmentService.jsx";
+import HomeMovers from "./pages/Solutions/homeMovers.jsx";
+import GSKThreads from "./pages/Solutions/clothing.js";
+import Trending from "./pages/trending.jsx";
 
 const App = () => {
   return (
