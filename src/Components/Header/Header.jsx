@@ -16,7 +16,7 @@ const Header = () => {
   const navItems = [
     {
       title: "Home",
-      path: "/",
+      path: "/home",
     },
     {
       title: "Solutions",
