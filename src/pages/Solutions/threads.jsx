@@ -1,6 +1,7 @@
 // src/Pages/Services/GSKThreads/gsk-threads.jsx
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
 import ProductModal from "../../Models/productsModel";
 
 const GSKThreads = () => {
@@ -12,6 +13,18 @@ const GSKThreads = () => {
     price: "",
     image: "",
   });
+
+  // Fetch products from the backend
+  useEffect(() => {
+    axios
+      .get("http://localhost:3001/api/products")
+      .then((response) => {
+        setProducts(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching products:", error);
+      });
+  }, []);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -43,23 +56,29 @@ const GSKThreads = () => {
     }
   };
 
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
     if (newProduct.name && newProduct.price && newProduct.image) {
-      addProducts({
-        ...newProduct,
-        id: products.length + 1,
-        price: parseFloat(newProduct.price), // Ensure price is a number
-      });
-      setShowForm(false);
-      setNewProduct({ id: "", name: "", price: "", image: "" });
+      try {
+        // Send new product to the backend
+        const response = await axios.post(
+          "http://localhost:3001/api/products",
+          newProduct,
+          {
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
+        setProducts((prevProducts) => [...prevProducts, response.data]); // Add new product to the list
+        setShowForm(false);
+        setNewProduct({ name: "", price: "", image: "" }); // Reset form
+      } catch (error) {
+        console.error("Error adding product:", error);
+      }
     } else {
       console.error("Invalid product data:", newProduct);
     }
-  };
-
-  const addProducts = (product) => {
-    setProducts((prevProducts) => [...prevProducts, product]);
   };
 
   return (
