@@ -34,7 +34,7 @@ const App = () => {
           element={<WebDevelopmentService />}
         />
         <Route path="/solutions/Home-Movers" element={<HomeMovers />} />
-        <Route path="/solutions/clothing" element={<GSKThreads />} />
+        <Route path="/solutions/threads" element={<GSKThreads />} />
 
         <Route path="/booking" element={<Booking />} />
         <Route path="/contact" element={<Contact />} />
