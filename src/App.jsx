@@ -17,7 +17,6 @@ import WebDevelopmentService from "./pages/Solutions/webDevelopmentService.jsx";
 import HomeMovers from "./pages/Solutions/homeMovers.jsx";
 import GSKThreads from "./pages/Solutions/threads.jsx";
 import Trending from "./pages/trending.jsx";
-// import ScrollingRow from "./Components/ScrollingEffect/scrolling.jsx";
 
 const App = () => {
   return (
@@ -40,7 +39,6 @@ const App = () => {
         <Route path="/booking" element={<Booking />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/trending" element={<Trending />} />
-        {/* <Route path="/scrolling" element={<ScrollingRow />} /> */}
       </Routes>
       <Footer />
     </Router>
