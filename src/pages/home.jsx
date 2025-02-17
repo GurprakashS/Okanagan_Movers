@@ -1,4 +1,4 @@
-// src/pages/Home.js
+// src/Pages/home.jsx
 import { motion } from "framer-motion";
 
 const Home = () => {
