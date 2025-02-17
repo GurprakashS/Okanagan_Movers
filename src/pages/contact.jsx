@@ -1,6 +1,4 @@
-// src/pages/contact.js
-import React from "react";
-
+// src/Pages/contact.js
 const Contact = () => {
   return (
     <div className="contact">
