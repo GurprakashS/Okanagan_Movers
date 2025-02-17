@@ -5,7 +5,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import Header from "./Components/Header/Header.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
-
 import Home from "./pages/home.jsx";
 import Services from "./pages/services.jsx";
 import Contact from "./pages/contact.jsx";
@@ -23,10 +22,9 @@ const App = () => {
     <Router>
       <Header />
       <Routes>
-        <Route path="/home" element={<Home />} />
         <Route path="/auth/login" element={<Login />} />
         <Route path="/auth/signup" element={<SignUp />} />
-
+        <Route path="/home" element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/solutions/web-design" element={<WebDesignService />} />
         <Route
