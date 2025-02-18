@@ -1,4 +1,4 @@
-.dropdown-menu.show {
+/* .dropdown-menu.show {
   position: absolute;
   top: 100%;
   transform: translateX(-50%);
@@ -34,4 +34,28 @@
   cursor: pointer;
   transform: none;
   position: relative;
+} */
+
+.dropdown-menu {
+  display: block;
+  min-width: 200px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+  transition: all 0.3s ease;
+  display: flex;
+}
+
+.nav-link:hover {
+  color: #616162 !important;
+}
+
+.dropdown-item {
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+  color: #007bff !important;
 }

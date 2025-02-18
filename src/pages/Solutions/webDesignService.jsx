@@ -1,8 +1,54 @@
 // src/Pages/WebDesignService.js
 import { Link } from "react-router-dom";
 import FreeConsultationForm from "../../Components/FreeConsultation/freeConsultationForm";
+import Pricing from "../../Components/Pricing/pricing.jsx";
 
 const WebDesignService = () => {
+  const WebDesignTiers = [
+    {
+      title: "Basic",
+      price: "12",
+      description: [
+        "Up to 1 page",
+        "Responsive design",
+        "Basic SEO optimization",
+        "1 revision round",
+      ],
+      buttonText: "Get Started",
+      buttonVariant: "outlined",
+      buttonColor: "primary",
+    },
+    {
+      title: "Pro",
+      subheader: "Most Popular",
+      price: "69",
+      description: [
+        "Up to 10 pages",
+        "Custom design",
+        "Advanced SEO optimization",
+        "3 revision rounds",
+        "Contact form integration",
+      ],
+      buttonText: "Choose Pro",
+      buttonVariant: "contained",
+      buttonColor: "secondary",
+    },
+    {
+      title: "Enterprise",
+      price: "150",
+      description: [
+        "Unlimited pages",
+        "Fully custom design",
+        "E-commerce integration",
+        "Priority support",
+        "Ongoing maintenance",
+      ],
+      buttonText: "Hurry Up!",
+      buttonVariant: "outlined",
+      buttonColor: "primary",
+    },
+  ];
+
   return (
     <div className="web-design-service">
       {/* Hero Section */}
@@ -83,7 +129,11 @@ const WebDesignService = () => {
         </div>
       </section>
 
-      {/* Free Consultation Form */}
+      <section className="container my-5">
+        <h2 className="text-center mb-4">Our Pricing Plans</h2>
+        <Pricing tiers={WebDesignTiers} page="web-design" />
+      </section>
+
       <div className="container my-5">
         <FreeConsultationForm />
       </div>

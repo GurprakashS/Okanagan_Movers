@@ -1,8 +1,60 @@
 // src/Pages/Solutions/WebDevelopmentService.js
 import { Link } from "react-router-dom";
 import FreeConsultationForm from "../../Components/FreeConsultation/freeConsultationForm";
+import Pricing from "../../Components/Pricing/pricing.jsx";
 
 const WebDevelopmentService = () => {
+  const WebDevelopmentTiers = [
+    {
+      title: "Essential",
+      price: "299",
+      description: [
+        "Up to 5 pages",
+        "Responsive design",
+        "Basic SEO optimization",
+        "2 revision rounds",
+        "Basic analytics setup",
+      ],
+      buttonText: "Get Started",
+      buttonVariant: "outlined",
+      buttonColor: "primary",
+    },
+    {
+      title: "Pro",
+      subheader: "Most Popular",
+      price: "699",
+      description: [
+        "Up to 15 pages",
+        "Custom design",
+        "Advanced SEO optimization",
+        "Unlimited revision rounds",
+        "Contact form integration",
+        "Social media integration",
+        "Basic e-commerce integration",
+      ],
+      buttonText: "Choose Pro",
+      buttonVariant: "contained",
+      buttonColor: "secondary",
+    },
+    {
+      title: "Enterprise",
+      price: "999",
+      description: [
+        "Unlimited pages",
+        "Fully custom design",
+        "Advanced e-commerce integration",
+        "Priority support",
+        "Ongoing maintenance",
+        "Dedicated account manager",
+        "Progressive Web App (PWA) features",
+        "AI chatbot integration",
+      ],
+      buttonText: "Hurry Up!",
+      buttonVariant: "outlined",
+      buttonColor: "primary",
+    },
+  ];
+
   return (
     <div className="web-development-service">
       {/* Hero Section */}
@@ -78,12 +130,14 @@ const WebDevelopmentService = () => {
                 </div>
               </div>
             </div>
-            {/* Repeat for other projects */}
           </div>
         </div>
       </section>
+      <section className="container my-5">
+        <h2 className="text-center mb-4">Our Pricing Plans</h2>
+        <Pricing tiers={WebDevelopmentTiers} page="web-development" />
+      </section>
 
-      {/* Free Consultation Form */}
       <FreeConsultationForm />
     </div>
   );

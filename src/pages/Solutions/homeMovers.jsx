@@ -1,8 +1,54 @@
 // src/Pages/Services/MoveMate/move-mate.jsx
 import { Link } from "react-router-dom";
 import FreeConsultationForm from "../../Components/FreeConsultation/freeConsultationForm";
+import Pricing from "../../Components/Pricing/pricing.jsx";
 
 const HomeMovers = () => {
+  const homeMoversTiers = [
+    {
+      title: "Residential",
+      price: "89",
+      description: [
+        "Local moving services",
+        "1 movers included",
+        "Truck provided",
+        "Basic insurance",
+      ],
+      buttonText: "Book Now",
+      buttonVariant: "outlined",
+      buttonColor: "primary",
+    },
+    {
+      title: "Packing Service",
+      subheader: "Most Popular",
+      price: "59",
+      description: [
+        "Professional packing services",
+        "High-quality packing materials",
+        "Custom packing solutions",
+        "Labeling for easy unpacking",
+        "Special care for fragile items",
+      ],
+      buttonText: "Book Now",
+      buttonVariant: "contained",
+      buttonColor: "secondary",
+    },
+    {
+      title: "Business",
+      price: "119",
+      description: [
+        "Office relocation services",
+        "Team of 3 movers included",
+        "Large truck fleet",
+        "Full insurance coverage",
+        "Weekend scheduling available",
+      ],
+      buttonText: "Get a Quote",
+      buttonVariant: "contained",
+      buttonColor: "secondary",
+    },
+  ];
+
   return (
     <div className="move-mate">
       {/* Hero Section */}
@@ -55,7 +101,11 @@ const HomeMovers = () => {
         </div>
       </section>
 
-      {/* Free Consultation Form */}
+      <section className="container my-5">
+        <h2 className="text-center mb-4">Our Pricing Plans</h2>
+        <Pricing tiers={homeMoversTiers} page="moving" />
+      </section>
+
       <FreeConsultationForm />
     </div>
   );
