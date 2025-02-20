@@ -1,5 +1,7 @@
 // src/Pages/home.jsx
 import ScrollingRow from "../Components/ScrollingEffect/scrolling";
+import Testimonials from "../Components/Testimonials/testimonials";
+import FAQs from "../Components/FAQs/faq";
 
 const Home = () => {
   return (
@@ -27,7 +29,6 @@ const Home = () => {
             </p>
             <button>Learn More</button>
           </div>
-          {/* Repeat for other services */}
         </div>
       </section>
 
@@ -38,7 +39,6 @@ const Home = () => {
             <img src="experienced-team-icon.png" alt="Experienced Team" />
             <p>Experienced Team</p>
           </div>
-          {/* Repeat for other advantages */}
         </div>
       </section>
 
@@ -49,7 +49,6 @@ const Home = () => {
             <p>&quot;Amazing service! Highly recommended.&quot;</p>
             <p>- John Doe</p>
           </div>
-          {/* Repeat for other testimonials */}
         </div>
       </section>
 
@@ -62,6 +61,14 @@ const Home = () => {
 
       <div>
         <ScrollingRow />
+      </div>
+
+      <div>
+        <Testimonials />
+      </div>
+
+      <div>
+        <FAQs />
       </div>
     </>
   );
