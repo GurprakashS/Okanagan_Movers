@@ -46,7 +46,7 @@ const Header = () => {
         </motion.h1>
 
         {/* Navigation Links */}
-        <nav className="d-flex align-items-center gap-5">
+        <nav className="d-flex align-items-center bg-white gap-5">
           {navItems.map((item) => (
             <div
               key={item.title}
@@ -54,7 +54,7 @@ const Header = () => {
               onMouseEnter={() => setHoveredLink(item.title)}
               onMouseLeave={() => setHoveredLink(null)}
             >
-              <Link className="nav-link text-dark fw-medium" to={item.path}>
+              <Link className="nav-link fw-medium" to={item.path}>
                 {item.title}
               </Link>
               <AnimatePresence>

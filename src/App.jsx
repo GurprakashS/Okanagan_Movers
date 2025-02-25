@@ -13,8 +13,8 @@ import Login from "./Auth/login.jsx";
 import SignUp from "./Auth/sign-up.jsx";
 import WebDesignService from "./pages/Solutions/webDesignService.jsx";
 import WebDevelopmentService from "./pages/Solutions/webDevelopmentService.jsx";
-import HomeMovers from "./pages/Solutions/homeMovers.jsx";
-import GSKThreads from "./pages/Solutions/threads.jsx";
+import HomeMovers from "./pages/Solutions/HomeMovers/homeMovers.jsx";
+// import GSKThreads from "./pages/Solutions/Clothing/threads.jsx";
 import Trending from "./pages/trending.jsx";
 
 const App = () => {
@@ -32,7 +32,7 @@ const App = () => {
           element={<WebDevelopmentService />}
         />
         <Route path="/solutions/Home-Movers" element={<HomeMovers />} />
-        <Route path="/solutions/threads" element={<GSKThreads />} />
+        {/* <Route path="/solutions/threads" element={<GSKThreads />} /> */}
 
         <Route path="/booking" element={<Booking />} />
         <Route path="/contact" element={<Contact />} />
