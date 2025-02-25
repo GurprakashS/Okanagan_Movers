@@ -12,7 +12,6 @@ const Home = () => {
     { title: "Software Development", icon: Img1 },
     { title: "Movers and Packers", icon: Img1 },
     { title: "Packing Services", icon: Img1 },
-    // { title: "Clothing Brand", icon: "https://via.placeholder.com/60" },
   ];
 
   // Ref to track the services section

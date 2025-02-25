@@ -21,7 +21,6 @@ const Header = () => {
         { title: "Web Design", path: "/solutions/web-design" },
         { title: "Web Development", path: "/solutions/web-development" },
         { title: "Home Movers", path: "/solutions/home-movers" },
-        { title: "GSK Threads", path: "/solutions/threads" },
       ],
     },
     {
